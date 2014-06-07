@@ -1,0 +1,45 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class='no-js lt-ie9 lt-ie8 lt-ie7'> <![endif]-->
+<!--[if IE 7]>         <html class='no-js lt-ie9 lt-ie8'> <![endif]-->
+<!--[if IE 8]>         <html class='no-js lt-ie9'> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class='no-js' data-ng-app='yelbroApp'> <!--<![endif]-->
+<head>
+  <!-- <base href="/"> -->
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width'>
+  <title ng-bind="'Yelbro | ' + title"></title>
+  <meta name='keywords' property='og:keywords' content='{{keywords}}'>
+  <meta name='description' property='og:description' content='{{description}}'>
+  <meta name='copyright' content='Yellow and Brown'>  
+  <link rel='shortcut icon' href='favicon.ico'>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel='stylesheet' href='lib/css/pure.v0.5.0.css'>
+  <link rel='stylesheet' href='lib/css/grids-responsive-min.css'>
+  <link rel='stylesheet' href='assets/style.min.css'>
+  <link rel='stylesheet' href='style/font.css'>
+  <!-- endbuild -->
+</head>
+<body>
+  <!-- Add your site or application content here -->
+  <div id='container' ng-view ng-cloak></div>
+
+  <!-- 3rd party -->
+  <script src='lib/angular/angular.min.js'></script>
+  <script src='lib/angular/angular-route.min.js'></script>
+  <script src='lib/angular/angular-resource.min.js'></script>
+  <script src='lib/angular/angular-cookies.min.js'></script>
+  <script src='lib/angular/angular-sanitize.min.js'></script>
+  <script src='lib/angular/angular-touch.min.js'></script>
+  <script src='lib/angular/angular-animate.min.js'></script>
+
+  <script src='lib/js/jquery.min.js'></script>
+
+  <!-- App -->
+  <script src='scripts/app.js'></script>
+  <script src='scripts/controllers.js'></script>
+</body>
+</html>
