@@ -104,6 +104,15 @@ nav {
   .icon-reorder {
     font-size: 28px;
   }
+  &.navbrown a {
+    color: $fbrown;
+  }
+  &.navcollabo a {
+    color: $fgrey;
+  }
+  &.navyellow a {
+    color: $fyellow;
+  }
 }
 
 #sidebar {
@@ -160,19 +169,43 @@ nav {
 }
 
 .sections {
-  padding: 3em 10em;
+  padding: 3em 12em;
 }
 
 /* each page */
-#gaps {
+/*** only background / nav class name ***/
+#about-brown,
+#work-brown {
+  background: $brown;
+  color: $fbrown;
+}
+
+#work-collabo {
+  background: $grey;
+  color: $fgrey;
+}
+
+#about-yellow,
+#work-yellow {
   background: $yellow;
   color: $fyellow;
+}
+
+/*** end background ***/
+
+/** 
+ * start about page 
+ */
+
+#about-brown,
+#about-yellow {
   min-height: 100%;
   #info {
     margin-bottom: 2em;
-    width: 40%;
+    width: 70%;
     h1 {
       border-bottom: 1px solid $fyellow;
+      height: 116px;
     }
     h2 {
       font-style: italic;
@@ -185,6 +218,7 @@ nav {
     margin-bottom: 2em;
     padding: 1em 0;
     h3 {
+      font-style: 1.1em;
       padding-bottom: 0.2em;
       .email {
         font-family: helvetica;
@@ -204,9 +238,13 @@ nav {
   }
 }
 
-#dickies {
-  background: $grey;
-  color: $fgrey;
+/** 
+ * start work page 
+ */
+
+#work-brown,
+#work-collabo,
+#work-yellow {
   min-height: 100%;
   .work {
     margin-bottom: 4em;
@@ -224,7 +262,7 @@ nav {
     cursor: pointer;
     display: block;
     div {
-      border-top: 1px solid $fgrey;
+      border-top: 1px solid #000;
     }
     h2 {
       width: 50%;
@@ -234,7 +272,7 @@ nav {
       font-style: italic;
       margin-bottom: .8em;
       span {
-        border-bottom: 3px solid $fgrey;
+        border-bottom: 3px solid #000;
         display: block;
         font-weight: 400;
         padding: .7em;
@@ -245,6 +283,7 @@ nav {
       display: block;
       float: left;
       font-size: .9em;
+      height: 150px;
       padding: .8em .8em .8em 1.6em;
       width: 50%;
     }
@@ -252,12 +291,53 @@ nav {
   h1 {
     margin-bottom: 2em;
   }
-
 }
 
-#oracles {
+#work-brown {
   background: $brown;
   color: $fbrown;
+  .brief {
+    div {
+      border-color: $fbrown;
+    }
+    h2 span {
+      border-color: $fbrown;
+    }
+  }
+}
+
+#work-collabo {
+  background: $grey;
+  color: $fgrey;
+  .brief {
+    div {
+      border-color: $fgrey;
+    }
+    h2 span {
+      border-color: $fgrey;
+    }
+  }
+}
+
+#work-yellow {
+  background: $yellow;
+  color: $fyellow;
+  .brief {
+    div {
+      border-color: $fyellow;
+    }
+    h2 span {
+      border-color: $fyellow;
+    }
+  }
+}
+
+/* end work page */
+
+/** 
+ * start cv page 
+ */
+#oracles {
   min-height: 100%;
   h1 {
     border-bottom: 1px solid $fbrown;
@@ -363,10 +443,22 @@ nav {
       padding-top: 1em;
     }
   }
+  .sections {
+    padding: 3em 5em;
+  }
 }
 
 /* tablet */
 @media screen and (max-width: 768px) {
+  #about-brown,
+  #about-yellow {
+    #info {
+      h1 {
+        height: auto;
+      }
+    } 
+  }
+
   #main-tabs > a {
     height: 15vw;
     width: 15vw;
@@ -374,7 +466,9 @@ nav {
   .sections {
     padding: 2em 6em;
   }
-  #dickies {
+  #work-brown,
+  #work-collabo,
+  #work-yellow {
     .work {
       &.col1 {
         padding-right: 0;
@@ -383,15 +477,16 @@ nav {
         padding-left: 0;
       }
     }
-  }
-  #dickies .brief {
-    h2 {
-      width: 100%;
-    }
-    p {
-      padding-left: .8em;
-      padding-top: 0;
-      width: 100%;
+    .brief {
+      h2 {
+        width: 100%;
+      }
+      p {
+        height: auto;
+        padding-left: .8em;
+        padding-top: 0;
+        width: 100%;
+      }
     }
   }
 }

@@ -15,6 +15,7 @@ app.run(['$location', '$rootScope', '$timeout', function($location, $rootScope, 
         $rootScope.title = current.$$route.title;
         $rootScope.keywords = current.$$route.keywords;
         $rootScope.description = current.$$route.description;
+        $rootScope.navclass = current.$$route.navclass;
     });
 }]);
 
@@ -29,6 +30,31 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             title: 'Yello & Brown',
             keywords: 'Yello & Brown, Yellow and Brown',
             description: 'Yellow and Brown'
+        })
+        // All works
+        .when('/work', {
+            templateUrl: 'views/work-collabo.html',
+            controller: 'WorkCollaboCtrl',
+            title: 'Work, Gary Lim, Nikhil, Gary and Nikhil',
+            keywords: 'Work, Gary, Nikhil, Gary Lim',
+            description: 'Yellow and Brown, Collaboration',
+            navclass: 'navcollabo'
+        })
+        .when('/work/gary-lim', {
+            templateUrl: 'views/work-yellow.html',
+            controller: 'WorkYellowCtrl',
+            title: 'Work, Gary Lim',
+            keywords: 'Work, Gary, Gary Lim',
+            description: 'Yellow and Brown, Gary',
+            navclass: 'navyellow'
+        })
+        .when('/work/nikhil', {
+            templateUrl: 'views/work-brown.html',
+            controller: 'WorkBrownCtrl',
+            title: 'Work, Nikyil',
+            keywords: 'Work, Nikyil',
+            description: 'Yellow and Brown, Nikyil',
+            navclass: 'navbrown'
         })
         // gaps
         .when('/gaps', {
