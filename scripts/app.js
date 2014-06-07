@@ -31,7 +31,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             keywords: 'Yello & Brown, Yellow and Brown',
             description: 'Yellow and Brown'
         })
-        // All works
+        // work page
         .when('/work', {
             templateUrl: 'views/work-collabo.html',
             controller: 'WorkCollaboCtrl',
@@ -54,6 +54,40 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             title: 'Work, Nikyil',
             keywords: 'Work, Nikyil',
             description: 'Yellow and Brown, Nikyil',
+            navclass: 'navbrown'
+        })
+        // about page
+        .when('/about/gary-lim', {
+            templateUrl: 'views/about-yellow.html',
+            controller: 'AboutYellowCtrl',
+            title: 'About Gary',
+            keywords: 'Yello & Brown, About, Gary',
+            description: 'Yello & Brown, about Gary',
+            navclass: 'navyellow'
+        })
+        .when('/about/nikhil', {
+            templateUrl: 'views/about-brown.html',
+            controller: 'AboutBrownCtrl',
+            title: 'About Nikhil',
+            keywords: 'Yello & Brown, About, Nikhil',
+            description: 'Yello & Brown, about Nikhil',
+            navclass: 'navbrown'
+        })
+        // cv page
+        .when('/cv/gary-lim', {
+            templateUrl: 'views/cv-yellow.html',
+            controller: 'CvYellowCtrl',
+            title: 'CV',
+            keywords: 'Yello & Brown, work experience of Gary',
+            description: 'CV, Gary',
+            navclass: 'navyellow'
+        })
+        .when('/cv/nikhil', {
+            templateUrl: 'views/cv-brown.html',
+            controller: 'CvBrownCtrl',
+            title: 'CV',
+            keywords: 'Yello & Brown, work experience of Nikhil',
+            description: 'CV, Nikhil',
             navclass: 'navbrown'
         })
         // gaps

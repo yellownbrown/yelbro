@@ -29,7 +29,10 @@
 <body>
   <!-- Add your site or application content here -->
   <nav ng-class='navclass'><a ng-click='showNav =! showNav'><span class='icon-reorder'></span></a></nav>
-  <div id='sidebar' ng-show='showNav'></div>
+  <div id='sidebar' ng-show='showNav'>
+    <a href='#/about/gary-lim'> about gary</a>
+    <a href='#/about/nikhil'> about nikhil</a>
+  </div>
   <div id='container' ng-view ng-cloak></div>
 
   <!-- 3rd party -->

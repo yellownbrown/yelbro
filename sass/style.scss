@@ -175,7 +175,8 @@ nav {
 /* each page */
 /*** only background / nav class name ***/
 #about-brown,
-#work-brown {
+#work-brown,
+#cv-brown {
   background: $brown;
   color: $fbrown;
 }
@@ -186,7 +187,8 @@ nav {
 }
 
 #about-yellow,
-#work-yellow {
+#work-yellow,
+#cv-yellow {
   background: $yellow;
   color: $fyellow;
 }
@@ -204,7 +206,7 @@ nav {
     margin-bottom: 2em;
     width: 70%;
     h1 {
-      border-bottom: 1px solid $fyellow;
+      border-bottom: 1px solid #000;
       height: 116px;
     }
     h2 {
@@ -213,8 +215,8 @@ nav {
     }
   }
   #info-contact {
-    border-bottom: 3px solid $fyellow;
-    border-top: 1px solid $fyellow;
+    border-bottom: 3px solid #000;
+    border-top: 1px solid #000;
     margin-bottom: 2em;
     padding: 1em 0;
     h3 {
@@ -237,6 +239,30 @@ nav {
     }
   }
 }
+
+#about-brown {
+  #info {
+    h1 {
+      border-color: $fbrown;
+    }
+  }
+  #info-contact {
+    border-color: $fbrown;
+  }
+}
+
+#about-yellow {
+  #info {
+    h1 {
+      border-color: $fyellow;
+    }
+  }
+  #info-contact {
+    border-color: $fyellow;
+  }
+}
+
+
 
 /** 
  * start work page 
@@ -337,7 +363,8 @@ nav {
 /** 
  * start cv page 
  */
-#oracles {
+#cv-brown,
+#cv-yellow {
   min-height: 100%;
   h1 {
     border-bottom: 1px solid $fbrown;
@@ -379,13 +406,33 @@ nav {
   }
 }
 
+#cv-brown {
+  h1 {
+    border-color: $fbrown;
+  }
+  .annual {
+    h2 {
+      border-color: $fbrown;
+    }
+  }
+}
+
+#cv-yellow {
+  h1 {
+    border-color: $fyellow;
+  }
+  .annual {
+    h2 {
+      border-color: $fyellow;
+    }
+  }
+}
 
 /* svg */
 .icon {
   height: 32px;
   width: 32px;
   margin: 0;
-  /*height: 20vmin;*/
   fill: $yellow;
 }
 .icon.is-check{
@@ -397,7 +444,6 @@ nav {
   stroke-width: 2px;
   fill: transparent;
 }
-
 
 .icon.is-x2{
   width: 10%;
@@ -428,7 +474,8 @@ nav {
 
 
 @media screen and (min-width: 1024px) {
-  #oracles {
+  #cv-brown,
+  #cv-yellow {
     .line-lg h2 {
       border-top: none;
       padding-top: 0;
@@ -437,9 +484,15 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
-  #oracles {
+  #cv-brown {
     .line-lg.line-md h2 {
       border-top: 1px solid $fbrown;
+      padding-top: 1em;
+    }
+  }
+  #cv-yellow {
+    .line-lg.line-md h2 {
+      border-top: 1px solid $fyellow;
       padding-top: 1em;
     }
   }
@@ -458,7 +511,6 @@ nav {
       }
     } 
   }
-
   #main-tabs > a {
     height: 15vw;
     width: 15vw;
@@ -493,9 +545,15 @@ nav {
 
 /* mobile */
 @media screen and (max-width: 568px) {
-  #oracles {
+  #cv-brown {
     .line-lg.line-sm h2 {
       border-top: 1px solid $fbrown;
+      padding-top: 1em;
+    }
+  }
+  #cv-yellow {
+    .line-lg.line-sm h2 {
+      border-top: 1px solid $fyellow;
       padding-top: 1em;
     }
   }
@@ -506,7 +564,9 @@ nav {
   .sections {
     padding: 2em;
   }
-  #dickies {
+  #work-brown,
+  #work-collabo,
+  #work-yellow {
     .work {
       &.col1 {
         padding-right: 0;
@@ -516,7 +576,9 @@ nav {
       }
     }
   }
-  #dickies .brief {
+  #work-brown .brief,
+  #work-collabo .brief,
+  #work-yellow .brief {
     h2 {
       width: 100%;
     }
