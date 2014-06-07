@@ -14,6 +14,9 @@
   <meta name='description' property='og:description' content='{{description}}'>
   <meta name='copyright' content='Yellow and Brown'>  
   <link rel='shortcut icon' href='favicon.ico'>
+
+  <!-- font from web -->
+  <!-- <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/futura-renner" rel="stylesheet" type="text/css"/> -->
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- build:css(.tmp) styles/main.css -->
@@ -25,6 +28,8 @@
 </head>
 <body>
   <!-- Add your site or application content here -->
+  <nav><a ng-click='showNav =! showNav'><span class='icon-reorder'></span></a></nav>
+  <div id='sidebar' ng-show='showNav'></div>
   <div id='container' ng-view ng-cloak></div>
 
   <!-- 3rd party -->

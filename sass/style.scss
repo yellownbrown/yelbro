@@ -71,6 +71,12 @@ h1,h2,h3,p {
   margin: 0;
 }
 
+/*p { 
+  font-family: 'FuturaRenner'; 
+  font-weight: normal; 
+  font-style: normal; 
+}*/
+
 /* font */
 .up {
   text-transform: uppercase;
@@ -81,7 +87,9 @@ h1,h2,h3,p {
 }
 
 .futura {
-  font-family: 'futura';
+  /*font-family: 'futura';*/
+  font-family: 'FuturaRennerR';
+  font-weight: 100;
 }
 
 .minion {
@@ -92,9 +100,19 @@ nav {
   position: absolute;
   right: 1em;
   top: 1em;
+  z-index: 1;
   .icon-reorder {
     font-size: 28px;
   }
+}
+
+#sidebar {
+  background: #fdd;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 100px;
+  z-index: 0;
 }
 /* index.html */
 #container {
@@ -154,7 +172,6 @@ nav {
     margin-bottom: 2em;
     width: 40%;
     h1 {
-
       border-bottom: 1px solid $fyellow;
     }
     h2 {
@@ -165,9 +182,19 @@ nav {
   #info-contact {
     border-bottom: 3px solid $fyellow;
     border-top: 1px solid $fyellow;
+    margin-bottom: 2em;
     padding: 1em 0;
     h3 {
       padding-bottom: 0.2em;
+      .email {
+        font-family: helvetica;
+        font-weight: 400;
+        text-transform: lowercase;
+      }
+      .mobile {
+        font-family: helvetica;
+        font-weight: 400;
+      }
     }
   }
   #info-desc {
@@ -209,7 +236,9 @@ nav {
       span {
         border-bottom: 3px solid $fgrey;
         display: block;
-        padding: .8em;
+        font-weight: 400;
+        padding: .7em;
+        text-transform: uppercase;
       }
     }
     p {
@@ -231,7 +260,42 @@ nav {
   color: $fbrown;
   min-height: 100%;
   h1 {
-    margin-bottom: 2em;
+    border-bottom: 1px solid $fbrown;
+    margin-left: .5em;
+    margin-right: .5em;
+    padding-bottom: 2em;
+  }
+  .annual {
+    padding: 1em;
+    h2 {
+      border-bottom: 3px solid $fbrown;
+      border-top: 1px solid $fbrown;
+      font-weight: 100;
+      margin-bottom: 1em;
+      margin-top: .5em;
+      padding-bottom: 1em;
+      padding-left: .5em;
+      padding-top: 1em;
+    }
+    div {
+      padding-left: .5em;
+      h3,
+      p {
+        text-transform: uppercase;
+      }
+      h3 {
+        font-weight: 100;
+        margin-bottom: .2em;
+        margin-top: 1em;
+      }
+      p {
+        font-family: 'MinionPro';
+      }
+    }
+  }
+  .line-lg h2 {
+    border-top: none;
+    padding-top: 0;
   }
 }
 
@@ -282,6 +346,25 @@ nav {
   transition: all .35s ease-out;
 }
 
+
+@media screen and (min-width: 1024px) {
+  #oracles {
+    .line-lg h2 {
+      border-top: none;
+      padding-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #oracles {
+    .line-lg.line-md h2 {
+      border-top: 1px solid $fbrown;
+      padding-top: 1em;
+    }
+  }
+}
+
 /* tablet */
 @media screen and (max-width: 768px) {
   #main-tabs > a {
@@ -315,6 +398,12 @@ nav {
 
 /* mobile */
 @media screen and (max-width: 568px) {
+  #oracles {
+    .line-lg.line-sm h2 {
+      border-top: 1px solid $fbrown;
+      padding-top: 1em;
+    }
+  }
   #main-tabs > a {
     height: 20vw;
     width: 20vw;

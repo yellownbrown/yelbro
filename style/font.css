@@ -1,23 +1,27 @@
 @font-face {
   font-family: 'MinionPro';
   src: url('./../fonts/MinionPro-Regular.eot');
-  src: url('./../fonts/duke_fill-webfont.otf') format('opentype'),
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MinionPro';
-  src: url('./../fonts/MinionPro-Regular.eot');
-  src: url('./../fonts/duke_fill-webfont.otf') format('opentype'),
+  font-family: 'futura';
+  src: url('./../fonts/Futura1.ttc');
+}
+
+@font-face {
+  font-family: 'FuturaRennerL';
+  src: url('./../fonts/FuturaRenner-Light.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
-
 @font-face {
-font-family: 'futura';
-src: url('./../fonts/Futura.ttc');
+  font-family: 'FuturaRennerR';
+  src: url('./../fonts/FuturaRenner-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
