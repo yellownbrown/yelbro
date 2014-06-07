@@ -16,6 +16,18 @@ app.run(['$location', '$rootScope', '$timeout', function($location, $rootScope, 
         $rootScope.keywords = current.$$route.keywords;
         $rootScope.description = current.$$route.description;
         $rootScope.navclass = current.$$route.navclass;
+
+        $rootScope.showNav = false;
+
+        // console.log('@@@',current.$$route.originalPath );
+        // console.log('222',$rootScope);
+
+        // console.log('$location  ',$location) ;
+
+        if($location.path() != current.$$route.originalPath ) {
+            $rootScope.showNav = false;
+        }
+
     });
 }]);
 

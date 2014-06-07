@@ -589,3 +589,27 @@ nav {
     }
   }
 }
+
+
+
+#sidebar {
+  background: $grey;
+  position: absolute;
+  height: 100%;
+  -webkit-transition: right ease-out .5s;
+  transition: right ease-out .5s;
+  right: 0;
+  top: 0;
+  width: 200px;
+
+  padding-top: 4em;
+}
+
+#sidebar.ng-hide {
+  right: -200px;
+}
+
+#sidebar.ng-hide-add, 
+#sidebar.ng-hide-remove {
+  display:block!important;
+}

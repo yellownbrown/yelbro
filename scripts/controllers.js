@@ -17,7 +17,6 @@ app
 .controller('WorkYellowCtrl',['$scope', '$location',
     function($scope, $location) {
         console.log('Work - gary');
-        
     }
 ])
 .controller('WorkBrownCtrl',['$scope', '$location',
@@ -27,10 +26,10 @@ app
     }
 ])
 // all about
-.controller('AboutYellowCtrl',['$scope', '$location',
-    function($scope, $location) {
-        console.log('About - yellow');
-        
+.controller('AboutYellowCtrl',['$scope', '$location', '$rootScope',
+    function($scope, $location, $rootScope) {
+        console.log('About - yellow',$rootScope);
+        $rootScope.showNav == false;
     }
 ])
 .controller('AboutBrownCtrl',['$scope', '$location',
