@@ -55,7 +55,7 @@ app
         $timeout(function() {
             $('#detail').addClass('show');
             $('#closebutton').addClass('close')
-        }, 50);
+        }, 80);
         
         $scope.close = function() {
             $timeout(function() {
@@ -108,7 +108,7 @@ app
         $timeout(function() {
             $('#detail').addClass('show');
             $('#closebutton').addClass('close')
-        }, 50);
+        }, 80);
         
         $scope.close = function() {
             $timeout(function() {
