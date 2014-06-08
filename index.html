@@ -35,10 +35,40 @@
   </nav>
 
   <div id='sidebar' ng-class='sidebarclass' ng-show="showNav">
-    <ul>
+    <ul ng-show='showWork'>
       <li><a href='#/work/gary-lim'> Work / gary</a></li>
       <li><a href='#/work/nikhil'> Work / nikhil</a></li>
-      <li><a href='#/'> Home</a></li>
+      <li><a href='#/'>Home</a></li>
+    </ul>
+    <ul ng-show='showWorkG'>
+      <li><a href='#/about/gary-lim'> About </a></li>
+      <li><a href='#/cv/gary-lim'> CV </a></li>
+      <li><a href='#/'>Home</a></li>
+    </ul>
+    <ul ng-show='showWorkN'>
+      <li><a href='#/about/nikhil'> About </a></li>
+      <li><a href='#/cv/nikhil'> CV </a></li>
+      <li><a href='#/'>Home</a></li>
+    </ul>
+    <ul ng-show='showAboutG'>
+      <li><a href='#/work/gary-lim'> Work </a></li>
+      <li><a href='#/cv/gary-lim'> CV </a></li>
+      <li><a href='#/'>Home</a></li>
+    </ul>
+    <ul ng-show='showAboutN'>
+      <li><a href='#/work/nikhil'> Work </a></li>
+      <li><a href='#/cv/nikhil'> CV </a></li>
+      <li><a href='#/'>Home</a></li>
+    </ul>
+    <ul ng-show='showCvG'>
+      <li><a href='#/about/gary-lim'> About </a></li>
+      <li><a href='#/work/gary-lim'> Work </a></li>
+      <li><a href='#/'>Home</a></li>
+    </ul>
+    <ul ng-show='showCvN'>
+      <li><a href='#/about/nikhil'> About </a></li>
+      <li><a href='#/work/nikhil'> Work </a></li>
+      <li><a href='#/'>Home</a></li>
     </ul>
   </div>
 

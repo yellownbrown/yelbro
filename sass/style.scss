@@ -752,7 +752,6 @@ a.sideyellow.close {
     .work:nth-of-type(odd) {
       padding-left: 0;
     }
-
     .brief {
       h2 {
         width: 100%;
@@ -763,6 +762,12 @@ a.sideyellow.close {
         padding-top: 0;
         width: 100%;
       }
+    }
+  }
+  #cv-brown, 
+  #cv-yellow {
+    .sections {
+      padding: 2em 4em;
     }
   }
 }

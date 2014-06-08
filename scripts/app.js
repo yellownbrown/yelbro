@@ -20,21 +20,70 @@ app.run(['$location', '$rootScope', '$timeout', '$routeParams',
             $rootScope.navclass = current.$$route.navclass;
             $rootScope.sidebarclass = current.$$route.sidebarclass;
     
+            // navigation button
             $rootScope.hideNav = false;
             $rootScope.showNav = false;
-    
+
+            $rootScope.showWork = true;
+
+            // inside sidebar
+            $rootScope.showWorkG = false;
+            $rootScope.showWorkN = false;
+            $rootScope.showAboutG = false;
+            $rootScope.showAboutN = false;
+            $rootScope.showCvG = false;
+            $rootScope.showCvN = false;
+        
             if($location.path() != current.$$route.originalPath ) {
                 $rootScope.showNav = false;
             }
-    
-            // console.log($location.url());
-            
+
             if ($location.url().match('works/')) {
-                console.log('has params');
                 $rootScope.hideNav = true;
-                // $rootScope.
+                $rootScope.showWork = true;
             }
-    
+
+            if ($location.url().match('work/gary-lim')) {
+                $rootScope.hideNav = false;
+                $rootScope.showWorkG = true;
+                $rootScope.showWork = false;
+                $rootScope.showWork = false;
+            }
+
+            if ($location.url().match('work/nikhil')) {
+                $rootScope.hideNav = false;
+                $rootScope.showWorkN = true;
+                $rootScope.showWorkG = false;
+                $rootScope.showWork = false;
+            }
+
+            if ($location.url().match('about/gary-lim')) {
+                $rootScope.hideNav = false;
+                $rootScope.showAboutG = true;
+                $rootScope.showAboutN = false;
+                $rootScope.showWork = false;
+            }
+
+            if ($location.url().match('about/nikhil')) {
+                $rootScope.hideNav = false;
+                $rootScope.showAboutG = false;
+                $rootScope.showAboutN = true;
+                $rootScope.showWork = false;
+            }
+
+            if ($location.url().match('cv/gary-lim')) {
+                $rootScope.hideNav = false;
+                $rootScope.showCvG = true;
+                $rootScope.showCvN = false;
+                $rootScope.showWork = false;
+            }
+
+            if ($location.url().match('cv/nikhil')) {
+                $rootScope.hideNav = false;
+                $rootScope.showCvG = false;
+                $rootScope.showCvN = true;
+                $rootScope.showWork = false;
+            }
         });
 }]);
 
