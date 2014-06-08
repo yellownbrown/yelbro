@@ -30,13 +30,16 @@
   <!-- Add your site or application content here -->
   <nav ng-class='navclass'>
     <a ng-click='showNav =! showNav'><span class='icon-reorder'></span></a>
+    <a class="menu-icon" ng-class='{close: showNav == true}' ng-click='showNav =! showNav'>
+      <span></span>
+    </a>
   </nav>
 
   <div id='sidebar' ng-show="showNav">
     <ul>
-      <li><a href='#/about/gary-lim'> about gary</a></li>
-      <li><a href='#/about/nikhil'> about nikhil</a></li>
-      <li><a href='#/work/'> work</a></li>
+      <li><a href='#/work/gary-lim'> about gary</a></li>
+      <li><a href='#/work/nikhil'> about nikhil</a></li>
+      <li><a ng-click='showNav =! showNav'>Close</a></li>
     </ul>
   </div>
 
