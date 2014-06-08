@@ -100,7 +100,7 @@ nav {
   position: absolute;
   right: .5em;
   top: .5em;
-  z-index: 1;
+  z-index: 101;
   .icon-reorder {
     font-size: 28px;
   }
@@ -115,14 +115,6 @@ nav {
   }
 }
 
-#sidebar {
-  background: #fdd;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  width: 100px;
-  z-index: 0;
-}
 /* index.html */
 #container {
   height: 100%;
@@ -590,18 +582,19 @@ nav {
   }
 }
 
+
 #sidebar {
   background: $grey;
   box-shadow: -1px 0 5px rgba(0,0,0,.3);
   height: 100%;
+  padding-top: 4em;
   position: absolute;
-  -webkit-transition: right ease-out .5s;
-  transition: right ease-out .5s;
+  -webkit-transition: right ease-out .25s;
+  transition: right ease-out .25s;
   right: 0;
   top: 0;
   width: 200px;
-
-  padding-top: 4em;
+  z-index: 100;
 }
 
 #sidebar.ng-hide {
