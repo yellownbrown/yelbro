@@ -98,8 +98,8 @@ h1,h2,h3,p {
 
 nav {
   position: absolute;
-  right: 1em;
-  top: 1em;
+  right: .5em;
+  top: .5em;
   z-index: 1;
   .icon-reorder {
     font-size: 28px;
@@ -562,7 +562,7 @@ nav {
     width: 20vw;
   }
   .sections {
-    padding: 2em;
+    padding: 2em 3em;
   }
   #work-brown,
   #work-collabo,
