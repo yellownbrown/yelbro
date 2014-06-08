@@ -40,6 +40,7 @@ app
 
         $rootScope.title = $routeParams.params;
 
+        // http://yellownbrown.github.io/yelbro/collabo/collabo1.json
         // $http.get('collabo/'+$routeParams.params+'.json', {cache: true})
         $http.get('http://yellownbrown.github.io/yelbro/collabo/'+$routeParams.params+'.json', {cache: true})
         .success(function(data) {

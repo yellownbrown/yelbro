@@ -817,7 +817,9 @@ a.sideyellow.close {
     height: 20vw;
     width: 20vw;
   }
-  .sections {
+  .sections,
+  #cv-brown .sections,
+  #cv-yellow .sections {
     padding: 2em 3em;
   }
   #work-brown,
