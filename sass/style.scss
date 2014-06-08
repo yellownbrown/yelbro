@@ -817,10 +817,12 @@ a.sideyellow.close {
     height: 20vw;
     width: 20vw;
   }
-  .sections,
+  .sections {
+    padding: 2em 3em;
+  }
   #cv-brown .sections,
   #cv-yellow .sections {
-    padding: 2em 3em;
+    padding: 2em;
   }
   #work-brown,
   #work-collabo,
