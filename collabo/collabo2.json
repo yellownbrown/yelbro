@@ -5,5 +5,8 @@
 		"0": "images/default2.jpg",
 		"1": "images/default2.jpg",
 		"2": "images/default2.jpg"
+	},	
+	"videos": {
+		"0": "video/BigAdda.mp4"
 	}
 }

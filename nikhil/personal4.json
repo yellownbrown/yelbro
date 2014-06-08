@@ -3,5 +3,8 @@
 	"description": "Et harum quidem rerum ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
 	"images": {
 		"0": "images/default3.jpg"
+	},
+	"videos": {
+		"0": "video/BigAdda.mp4"
 	}
 }

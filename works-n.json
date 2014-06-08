@@ -1,20 +1,20 @@
 [
 	{
-		"title": "title1-nikhil",
+		"title": "Astrologer",
 		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/default.jpg",
+		"image": "images/nikhil/list_astrologer.jpg",
 		"id": "personal1"
 	},
 	{
-		"title": "title2-nikhil",
+		"title": "The Imperial",
 		"description": "Mmodi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
-		"image": "images/default2.jpg",
+		"image": "images/nikhil/list_imperial.jpg",
 		"id": "personal2"
 	},
 	{
-		"title": "title3-nikhil",
+		"title": "Soby",
 		"description": "totam rem aperiam, eaque ipsa quae ab illo inventore autem vel eum iure reprehenderit qui in ",
-		"image": "images/default2.jpg",
+		"image": "images/nikhil/list_sony.jpg",
 		"id": "personal3"
 	},
 	{

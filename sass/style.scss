@@ -361,6 +361,17 @@ a.sideyellow.close {
   }
   #tabs-gaps {
     background: $yellow;
+    p {
+      border: 1px solid red;
+      position: relative;
+      top: 0;
+      color: #000;
+      left: 0;
+      display: block;
+      width: 100px;
+      height: 20px;
+      z-index: 1000000000;
+    }
   }
   #tabs-dickies {
     background: $grey;
@@ -368,6 +379,13 @@ a.sideyellow.close {
   #tabs-oracles {
     background: $brown;
   }
+  /*#tabs-gaps:hover,
+  #tabs-dickies:hover,
+  #tabs-oracles:hover {
+    p {
+      display: block;
+    }
+  }*/
 }
 
 .pure-u-1 > h1 {
@@ -422,10 +440,11 @@ a.sideyellow.close {
     width: 70%;
     h1 {
       border-bottom: 1px solid #000;
-      height: 116px;
+      padding-bottom: .2em;
     }
     h2 {
       font-style: italic;
+      padding-top: .5em;
       text-transform: uppercase;
     }
   }
@@ -574,6 +593,19 @@ a.sideyellow.close {
   }
 }
 
+.video-wrapper {
+  text-align: center;
+  width: 100%;
+  video {
+    height: 360px;
+    width: 480px;
+  }
+}
+
+.audio-wrapper {
+  text-align: center;
+  width: 100%;
+}
 /* end work page */
 
 /** 
