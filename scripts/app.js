@@ -4,6 +4,7 @@
 var app = angular.module('yelbroApp', [
     'ngRoute',
     'ngControllers',
+    // 'ngServices',
     'ngAnimate'
 ]);
 

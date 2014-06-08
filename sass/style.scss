@@ -219,6 +219,43 @@ nav {
   }
 }
 
+a.sidebrown.close {
+  span:before,
+  span:after {
+    background: $fbrown;
+  }
+  &:hover span:before,
+  &:hover span:after,
+  &:active span:before,
+  &:active span:after {
+    background: $fbrown;
+  }
+}
+a.sidecollabo.close {
+  span:before,
+  span:after {
+    background: $fgrey;
+  }
+  &:hover span:before,
+  &:hover span:after,
+  &:active span:before,
+  &:active span:after {
+    background: $fgrey;
+  }
+}
+a.sideyellow.close {
+  span:before,
+  span:after {
+    background: $fyellow;
+  }
+  &:hover span:before,
+  &:hover span:after,
+  &:active span:before,
+  &:active span:after {
+    background: $yellow;
+  }
+}
+
 #sidebar {
   background: $grey;
   box-shadow: -1px 0 5px rgba(0,0,0,.3);
@@ -285,6 +322,11 @@ nav {
 #sidebar.ng-hide-add, 
 #sidebar.ng-hide-remove {
   display:block!important;
+}
+
+#closebutton {
+  right: 1em;
+  top: 1em;
 }
 
 /* index.html */
@@ -447,12 +489,12 @@ nav {
   min-height: 100%;
   .work {
     margin-bottom: 4em;
-    &.col1 {
-      padding-right: 1.5em;
-    }
-    &.col2 {
-      padding-left: 1.5em;
-    }
+  }
+  .work:nth-of-type(even) {
+    padding-right: 1.5em;
+  }
+  .work:nth-of-type(odd) {
+    padding-left: 1.5em;
   }
   img {
     width: 100%;
@@ -483,6 +525,7 @@ nav {
       float: left;
       font-size: .9em;
       height: 150px;
+      overflow: hidden;
       padding: .8em .8em .8em 1.6em;
       width: 50%;
     }
@@ -703,14 +746,13 @@ nav {
   #work-brown,
   #work-collabo,
   #work-yellow {
-    .work {
-      &.col1 {
-        padding-right: 0;
-      }
-      &.col2 {
-        padding-left: 0;
-      }
+    .work:nth-of-type(even) {
+      padding-right: 0;
     }
+    .work:nth-of-type(odd) {
+      padding-left: 0;
+    }
+
     .brief {
       h2 {
         width: 100%;
@@ -743,11 +785,13 @@ nav {
     width: 100%;
     z-index: 100;
   }
-  
+  #closebutton {
+    right: .5em;
+    top: .5em;
+  }  
   #sidebar.ng-hide {
     right: -200px;
-  }
-  
+  }  
   #sidebar.ng-hide-add, 
   #sidebar.ng-hide-remove {
     display:block!important;
@@ -808,15 +852,17 @@ nav {
 
 #detail {
   -webkit-transform: scale(.7, .7);
-
+  -moz-transform: scale(.7, .7);
   &.show {
-    -webkit-transform: scale(1, 1); // This is the scale for the normal size of the image.
-  -webkit-transition-duration: .3s;
-  -webkit-transition-timing-function: ease-out;
- 
-  /* Webkit for Mozila Firefox */
-  -moz-transform: scale(1, 1);
-  -moz-transition-duration: .3s;
-  -moz-transition-timing-function: ease-out;
+    -webkit-transform: scale(1, 1);
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transform: scale(1, 1);
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease-out;
   }
+}
+.icon-cross {
+  font-size: 38px;
+  transition: color 0.2s ease-out;
 }

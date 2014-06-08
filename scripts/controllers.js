@@ -8,9 +8,17 @@ app
     }
 ])
 // all work
-.controller('WorkCollaboCtrl',['$scope', '$location',
-    function($scope, $location) {
-        console.log('Work - collabo');
+.controller('WorkCollaboCtrl',['$scope', '$location', '$http', 
+    function($scope, $location, $http) {
+        console.log('Works / collabo', $scope);
+
+        $http.get('/works.json')
+        .success(function(data) {
+            // console.log(data, 'received');
+            $scope.workslist = data;
+        }).error(function(data, status) {
+            console.log('error',data);
+        });
         
     }
 ])
@@ -25,22 +33,31 @@ app
         
     }
 ])
-.controller('WorkCollaboDetailCtrl',['$scope', '$location', '$routeParams', '$rootScope', '$timeout',  
-    function($scope, $location, $routeParams, $rootScope, $timeout) {
-        console.log('Work - collabo -detail', $routeParams);
+.controller('WorkCollaboDetailCtrl',['$scope', '$location', '$routeParams', '$rootScope', '$timeout', '$http', 
+    function($scope, $location, $routeParams, $rootScope, $timeout, $http) {
+        console.log('Work - collabo - detail');
 
         $rootScope.title = $routeParams.params;
 
+        $http.get('collabo/'+$routeParams.params+'.json', {cache: true})
+        .success(function(data) {
+            console.log(data, 'received');
+            $scope.work = data;
+        }).error(function(data, status) {
+            console.log('error',data);
+        });
+
         $timeout(function() {
-            $('#detail').addClass('show')
+            $('#detail').addClass('show');
+            $('#closebutton').addClass('close')
         }, 50);
         
         $scope.close = function() {
             $timeout(function() {
                 $('#detail').removeClass('show');
+                $('#closebutton').removeClass('close')
                 $location.path('/works');
             }, 50);
-
         }
     }
 ])
