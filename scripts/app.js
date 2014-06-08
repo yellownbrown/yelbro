@@ -16,13 +16,9 @@ app.run(['$location', '$rootScope', '$timeout', function($location, $rootScope, 
         $rootScope.keywords = current.$$route.keywords;
         $rootScope.description = current.$$route.description;
         $rootScope.navclass = current.$$route.navclass;
+        $rootScope.sidebarclass = current.$$route.sidebarclass;
 
         $rootScope.showNav = false;
-
-        // console.log('@@@',current.$$route.originalPath );
-        // console.log('222',$rootScope);
-
-        // console.log('$location  ',$location) ;
 
         if($location.path() != current.$$route.originalPath ) {
             $rootScope.showNav = false;
@@ -50,7 +46,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             title: 'Work, Gary Lim, Nikhil, Gary and Nikhil',
             keywords: 'Work, Gary, Nikhil, Gary Lim',
             description: 'Yellow and Brown, Collaboration',
-            navclass: 'navcollabo'
+            navclass: 'navcollabo',
+            sidebarclass: 'sidecollabo'
         })
         .when('/work/gary-lim', {
             templateUrl: 'views/work-yellow.html',
@@ -58,7 +55,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             title: 'Work, Gary Lim',
             keywords: 'Work, Gary, Gary Lim',
             description: 'Yellow and Brown, Gary',
-            navclass: 'navyellow'
+            navclass: 'navyellow',
+            sidebarclass: 'sideyellow'
         })
         .when('/work/nikhil', {
             templateUrl: 'views/work-brown.html',
@@ -66,7 +64,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             title: 'Work, Nikyil',
             keywords: 'Work, Nikyil',
             description: 'Yellow and Brown, Nikyil',
-            navclass: 'navbrown'
+            navclass: 'navbrown',
+            sidebarclass: 'sidebrown'
         })
         // about page
         .when('/about/gary-lim', {
@@ -75,7 +74,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             title: 'About Gary',
             keywords: 'Yello & Brown, About, Gary',
             description: 'Yello & Brown, about Gary',
-            navclass: 'navyellow'
+            navclass: 'navyellow',
+            sidebarclass: 'sideyellow'
         })
         .when('/about/nikhil', {
             templateUrl: 'views/about-brown.html',
@@ -83,7 +83,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             title: 'About Nikhil',
             keywords: 'Yello & Brown, About, Nikhil',
             description: 'Yello & Brown, about Nikhil',
-            navclass: 'navbrown'
+            navclass: 'navbrown',
+            sidebarclass: 'sidebrown'
         })
         // cv page
         .when('/cv/gary-lim', {
@@ -92,7 +93,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             title: 'CV',
             keywords: 'Yello & Brown, work experience of Gary',
             description: 'CV, Gary',
-            navclass: 'navyellow'
+            navclass: 'navyellow',
+            sidebarclass: 'sideyellow'
         })
         .when('/cv/nikhil', {
             templateUrl: 'views/cv-brown.html',
@@ -100,7 +102,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             title: 'CV',
             keywords: 'Yello & Brown, work experience of Nikhil',
             description: 'CV, Nikhil',
-            navclass: 'navbrown'
+            navclass: 'navbrown',
+            sidebarclass: 'sidebrown'
         })
         // gaps
         .when('/gaps', {

@@ -20,6 +20,13 @@ $fbrown: #fec646;
   box-sizing: border-box;
 }
 
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 @mixin horizontal-center() {
   display: -webkit-box;
   display: -moz-box;
@@ -224,6 +231,51 @@ nav {
   top: 0;
   width: 200px;
   z-index: 100;
+  a {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  a:hover,
+  a:active {
+      background: #000;
+      color: #fff;
+  }
+  &.sidebrown {
+    background: #333;
+    a {
+      color: $fbrown;
+    }
+    a:hover,
+    a:active {
+      background: $fbrown;
+      color: $brown;
+    }
+  }
+  &.sidecollabo {
+    a {
+      color: $fgrey;
+    }
+    a:hover,
+    a:active {
+      background: $fgrey;
+      color: #fff;
+    }
+  }
+  &.sideyellow {
+    a {
+      color: $fyellow;
+    }
+    a:hover,
+    a:active {
+      background: $yellow;
+      color: #fff;
+    }
+  }
 }
 
 #sidebar.ng-hide {
@@ -659,7 +711,6 @@ nav {
 @media screen and (max-width: 568px) {
 
   #sidebar {
-    background: rgba(225,225,225,.9);
     box-shadow: -1px 0 5px rgba(0,0,0,.3);
     height: 100%;
     padding-top: 4em;
