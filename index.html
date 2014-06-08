@@ -29,8 +29,7 @@
 <body>
   <!-- Add your site or application content here -->
   <nav ng-class='navclass'>
-    <a ng-click='showNav =! showNav'><span class='icon-reorder'></span></a>
-    <a class="menu-icon" ng-class='{close: showNav == true}' ng-click='showNav =! showNav'>
+    <a class='menu-icon' ng-class='{close: showNav == true}' ng-click='showNav =! showNav'>
       <span></span>
     </a>
   </nav>
@@ -39,7 +38,6 @@
     <ul>
       <li><a href='#/work/gary-lim'> about gary</a></li>
       <li><a href='#/work/nikhil'> about nikhil</a></li>
-      <li><a ng-click='showNav =! showNav'>Close</a></li>
     </ul>
   </div>
 

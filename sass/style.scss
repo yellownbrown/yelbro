@@ -96,6 +96,92 @@ h1,h2,h3,p {
   font-family: 'MinionPro';
 }
 
+/* menu icon */
+.menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  position: absolute;
+  right: .5em;
+  text-align: right;
+  top: .5em;
+  width: 50px;
+  z-index: 101;
+  -webkit-transition: opacity 0.2s 1.6s ease-out;
+  -moz-transition: opacity 0.2s 1.6s ease-out;
+  -o-transition: opacity 0.2s 1.6s ease-out;
+  transition: opacity 0.2s 1.6s ease-out;
+}
+
+.menu-icon span:before,
+.menu-icon span:after {
+  width: 30px;
+  height: 3px;
+  display: inline-block;
+  background: #000;
+  position: absolute;
+  left: 0;
+  content: " ";
+  transform-origin: 50% 50%;
+  -webkit-transition: top 0.2s 0.2s ease-out, -webkit-transform 0.2s linear;
+  -moz-transition: top 0.2s 0.2s ease-out, -moz-transform 0.2s linear;
+  -o-transition: top 0.2s 0.2s ease-out, -o-transform 0.2s linear;
+  transition: top 0.2s 0.2s ease-out, transform 0.2s -out;
+}
+
+.menu-icon span {
+  width: 30px;
+  height: 3px;
+  position: relative;
+  display: inline-block;
+  background: #000;
+  /*-webkit-transition: background 0.4s ease-out;
+  -moz-transition: background 0.4s ease-out;
+  -o-transition: background 0.4s ease-out;
+  transition: background 0.4s ease-out;*/
+}
+
+.menu-icon span:after {
+  top: -9px;
+}
+
+.menu-icon span:before {
+  top: 9px;
+}
+
+.menu-icon.close span:before {
+  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+  -moz-transform: rotate3d(0, 0, 1, 45deg);
+  -o-transform: rotate3d(0, 0, 1, 45deg);
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.menu-icon.close span:after {
+  -webkit-transform: rotate3d(0, 0, 1, -45deg);
+  -moz-transform: rotate3d(0, 0, 1, -45deg);
+  -o-transform: rotate3d(0, 0, 1, -45deg);
+  transform: rotate3d(0, 0, 1, -45deg);
+}
+
+.menu-icon.close span {
+  -webkit-transition: background 0.2s ease-out;
+  -moz-transition: background 0.2s ease-out;
+  -o-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+  background-color: transparent;
+}
+
+.menu-icon.close span:before, 
+.menu-icon.close span:after {
+  -webkit-transition: top 0.2s ease-out, -webkit-transform 0.2s 0.2s ease-out, background 0.2s ease-out;
+  -moz-transition: top 0.2s ease-out, -moz-transform 0.2s 0.2s ease-out, background 0.2s ease-out;
+  -o-transition: top 0.2s ease-out, -o-transform 0.2s 0.2s ease-out, background 0.2s ease-out;
+  transition: top 0.2s ease-out, transform 0.2s 0.2s ease-out, background 0.2s ease-out;
+  top: 0;
+  width: 30px;
+  background-color: #000;
+}
+
 nav {
   position: absolute;
   right: .5em;
@@ -104,14 +190,25 @@ nav {
   .icon-reorder {
     font-size: 28px;
   }
-  &.navbrown a {
-    color: $fbrown;
+  &.navbrown .menu-icon span:before,
+  &.navbrown .menu-icon span:after,
+  &.navbrown .menu-icon span {
+    background: $fbrown;
   }
-  &.navcollabo a {
-    color: $fgrey;
+  &.navcollabo .menu-icon span:before,
+  &.navcollabo .menu-icon span:after,
+  &.navcollabo .menu-icon span {
+    background: $fgrey;
   }
-  &.navyellow a {
-    color: $fyellow;
+  &.navyellow .menu-icon span:before,
+  &.navyellow .menu-icon span:after,
+  &.navyellow .menu-icon span {
+    background: $fyellow;
+  }
+  &.navbrown .menu-icon.close span,
+  &.navcollabo .menu-icon.close span,
+  &.navyellow .menu-icon.close span {
+    background-color: transparent;
   }
 }
 
@@ -626,89 +723,4 @@ nav {
       width: 100%;
     }
   }
-}
-/* menu icon */
-.menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  height: 50px;
-  position: absolute;
-  right: 0;
-  text-align: right;
-  top: .5em;
-  width: 50px;
-  z-index: 101;
-  -webkit-transition: opacity 0.2s 1.6s ease-out;
-  -moz-transition: opacity 0.2s 1.6s ease-out;
-  -o-transition: opacity 0.2s 1.6s ease-out;
-  transition: opacity 0.2s 1.6s ease-out;
-}
-
-.menu-icon span:before,
-.menu-icon span:after {
-  width: 30px;
-  height: 3px;
-  display: inline-block;
-  background: #000;
-  position: absolute;
-  left: 0;
-  content: " ";
-  transform-origin: 50% 50%;
-  -webkit-transition: top 0.2s 0.2s ease-out, -webkit-transform 0.2s linear;
-  -moz-transition: top 0.2s 0.2s ease-out, -moz-transform 0.2s linear;
-  -o-transition: top 0.2s 0.2s ease-out, -o-transform 0.2s linear;
-  transition: top 0.2s 0.2s ease-out, transform 0.2s -out;
-}
-
-.menu-icon span {
-  width: 30px;
-  height: 3px;
-  position: relative;
-  display: inline-block;
-  background: #000;
-  -webkit-transition: background 0.4s ease-out;
-  -moz-transition: background 0.4s ease-out;
-  -o-transition: background 0.4s ease-out;
-  transition: background 0.4s ease-out;
-}
-
-.menu-icon span:after {
-  top: -9px;
-}
-
-.menu-icon span:before {
-  top: 9px;
-}
-
-.menu-icon.close span:before {
-  -webkit-transform: rotate3d(0, 0, 1, 45deg);
-  -moz-transform: rotate3d(0, 0, 1, 45deg);
-  -o-transform: rotate3d(0, 0, 1, 45deg);
-  transform: rotate3d(0, 0, 1, 45deg);
-}
-
-.menu-icon.close span:after {
-  -webkit-transform: rotate3d(0, 0, 1, -45deg);
-  -moz-transform: rotate3d(0, 0, 1, -45deg);
-  -o-transform: rotate3d(0, 0, 1, -45deg);
-  transform: rotate3d(0, 0, 1, -45deg);
-}
-
-.menu-icon.close span {
-  -webkit-transition: background 0.2s ease-out;
-  -moz-transition: background 0.2s ease-out;
-  -o-transition: background 0.2s ease-out;
-  transition: background 0.2s ease-out;
-  background-color: transparent;
-}
-
-.menu-icon.close span:before, 
-.menu-icon.close span:after {
-  -webkit-transition: top 0.2s ease-out, -webkit-transform 0.2s 0.2s ease-out, background 0.2s ease-out;
-  -moz-transition: top 0.2s ease-out, -moz-transform 0.2s 0.2s ease-out, background 0.2s ease-out;
-  -o-transition: top 0.2s ease-out, -o-transform 0.2s 0.2s ease-out, background 0.2s ease-out;
-  transition: top 0.2s ease-out, transform 0.2s 0.2s ease-out, background 0.2s ease-out;
-  top: 0;
-  width: 32px;
-  background-color: #000;
 }
