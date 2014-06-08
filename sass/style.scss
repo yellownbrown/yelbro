@@ -235,7 +235,7 @@ nav {
     color: #000;
     cursor: pointer;
     display: block;
-    padding: 1em;
+    padding: 1em 2em;
     text-decoration: none;
     text-transform: uppercase;
     width: 100%;
@@ -709,7 +709,10 @@ nav {
 
 /* mobile */
 @media screen and (max-width: 568px) {
-
+  nav {
+    right: 0;
+    top: 0;
+  }
   #sidebar {
     box-shadow: -1px 0 5px rgba(0,0,0,.3);
     height: 100%;
