@@ -343,11 +343,17 @@ nav {
 #cv-brown {
   background: $brown;
   color: $fbrown;
+  a {
+    color: $fbrown;
+  }
 }
 
 #work-collabo {
   background: $grey;
   color: $fgrey;
+  a {
+    color: $fgrey;
+  }
 }
 
 #about-yellow,
@@ -355,6 +361,9 @@ nav {
 #cv-yellow {
   background: $yellow;
   color: $fyellow;
+  a {
+    color: $fyellow;
+  }
 }
 
 /*** end background ***/
@@ -592,6 +601,15 @@ nav {
   }
 }
 
+#detail {
+  p,
+  img {
+    margin-bottom: 4em;
+  }
+  img:last-child {
+    margin-bottom: 2em;
+  }
+}
 /* svg */
 .icon {
   height: 32px;
@@ -775,6 +793,15 @@ nav {
       padding-left: .8em;
       padding-top: 0;
       width: 100%;
+    }
+  }
+  #detail {
+    p,
+    img {
+      margin-bottom: 3em;
+    }
+    img:last-child {
+      margin-bottom: 1em;
     }
   }
 }

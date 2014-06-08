@@ -25,6 +25,14 @@ app
         
     }
 ])
+.controller('WorkCollaboDetailCtrl',['$scope', '$location', '$routeParams', '$rootScope', 
+    function($scope, $location, $routeParams, $rootScope) {
+        console.log('Work - collabo -detail', $routeParams);
+
+        $rootScope.title = $routeParams.params;
+        
+    }
+])
 // all about
 .controller('AboutYellowCtrl',['$scope', '$location', '$rootScope',
     function($scope, $location, $rootScope) {

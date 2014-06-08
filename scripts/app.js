@@ -7,24 +7,34 @@ var app = angular.module('yelbroApp', [
     'ngAnimate'
 ]);
 
-app.run(['$location', '$rootScope', '$timeout', function($location, $rootScope, $timeout) {
-    $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
-        // when change route, page always goes top (jquery attached)
-        $(window).scrollTop(0);
-        // metadata
-        $rootScope.title = current.$$route.title;
-        $rootScope.keywords = current.$$route.keywords;
-        $rootScope.description = current.$$route.description;
-        $rootScope.navclass = current.$$route.navclass;
-        $rootScope.sidebarclass = current.$$route.sidebarclass;
-
-        $rootScope.showNav = false;
-
-        if($location.path() != current.$$route.originalPath ) {
+app.run(['$location', '$rootScope', '$timeout', '$routeParams', 
+    function($location, $rootScope, $timeout, $routeParams) {
+        $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+            // when change route, page always goes top (jquery attached)
+            $(window).scrollTop(0);
+            // metadata
+            $rootScope.title = current.$$route.title;
+            $rootScope.keywords = current.$$route.keywords;
+            $rootScope.description = current.$$route.description;
+            $rootScope.navclass = current.$$route.navclass;
+            $rootScope.sidebarclass = current.$$route.sidebarclass;
+    
+            $rootScope.hideNav = false;
             $rootScope.showNav = false;
-        }
-
-    });
+    
+            if($location.path() != current.$$route.originalPath ) {
+                $rootScope.showNav = false;
+            }
+    
+            // console.log($location.url());
+            
+            if ($location.url().match('works/')) {
+                console.log('has params');
+                $rootScope.hideNav = true;
+                // $rootScope.
+            }
+    
+        });
 }]);
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
@@ -40,11 +50,20 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             description: 'Yellow and Brown'
         })
         // work page
-        .when('/work', {
+        .when('/works', {
             templateUrl: 'views/work-collabo.html',
             controller: 'WorkCollaboCtrl',
             title: 'Work, Gary Lim, Nikhil, Gary and Nikhil',
             keywords: 'Work, Gary, Nikhil, Gary Lim',
+            description: 'Yellow and Brown, Collaboration',
+            navclass: 'navcollabo',
+            sidebarclass: 'sidecollabo'
+        })
+        .when('/works/:params', {
+            templateUrl: 'views/work-collabo-detail.html',
+            controller: 'WorkCollaboDetailCtrl',
+            title: 'Work, Gary Lim, Nikhil, Gary and Nikhil',
+            keywords: 'collabo work - detail',
             description: 'Yellow and Brown, Collaboration',
             navclass: 'navcollabo',
             sidebarclass: 'sidecollabo'
