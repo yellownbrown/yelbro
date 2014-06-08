@@ -25,12 +25,23 @@ app
         
     }
 ])
-.controller('WorkCollaboDetailCtrl',['$scope', '$location', '$routeParams', '$rootScope', 
-    function($scope, $location, $routeParams, $rootScope) {
+.controller('WorkCollaboDetailCtrl',['$scope', '$location', '$routeParams', '$rootScope', '$timeout',  
+    function($scope, $location, $routeParams, $rootScope, $timeout) {
         console.log('Work - collabo -detail', $routeParams);
 
         $rootScope.title = $routeParams.params;
+
+        $timeout(function() {
+            $('#detail').addClass('show')
+        }, 50);
         
+        $scope.close = function() {
+            $timeout(function() {
+                $('#detail').removeClass('show');
+                $location.path('/works');
+            }, 50);
+
+        }
     }
 ])
 // all about
