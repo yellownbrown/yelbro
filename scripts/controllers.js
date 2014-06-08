@@ -13,6 +13,7 @@ app
         console.log('Works / collabo', $scope);
 
         // $http.get('/works.json')
+
         $http.get('http://yellownbrown.github.io/yelbro/works.json')
         .success(function(data) {
             // console.log(data, 'received');
