@@ -12,7 +12,9 @@ app
     function($scope, $location, $http) {
         console.log('Works / collabo', $scope);
 
-        $http.get('/works.json')
+        // $http.get('/works.json')
+
+        $http.get('http://yellownbrown.github.io/yelbro/works.json')
         .success(function(data) {
             // console.log(data, 'received');
             $scope.workslist = data;
@@ -39,7 +41,9 @@ app
 
         $rootScope.title = $routeParams.params;
 
-        $http.get('collabo/'+$routeParams.params+'.json', {cache: true})
+        // http://yellownbrown.github.io/yelbro/collabo/collabo1.json
+        // $http.get('collabo/'+$routeParams.params+'.json', {cache: true})
+        $http.get('http://yellownbrown.github.io/yelbro/collabo/'+$routeParams.params+'.json', {cache: true})
         .success(function(data) {
             console.log(data, 'received');
             $scope.work = data;
