@@ -11,15 +11,29 @@
 }
 
 @font-face {
-  font-family: 'FuturaRennerL';
-  src: url('./../fonts/FuturaRenner-Light.otf') format('opentype');
+  font-family: 'futura';
+  src: url('./../fonts/futura-normal.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'FuturaRennerR';
-  src: url('./../fonts/FuturaRenner-Regular.otf') format('opentype');
+  font-family: 'futurabookregular';
+  src: url('./../fonts/FuturaBook-NormalRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futurab';
+  src: url('./../fonts/FuturaBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futuraStd-c';
+  src: url('./../fonts/FuturaStd/FuturaStd-CondensedLight.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }

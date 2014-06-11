@@ -94,8 +94,8 @@ h1,h2,h3,p {
 }
 
 .futura {
-  /*font-family: 'futura';*/
-  font-family: 'FuturaRennerR';
+  font-family: 'futura';
+  /*font-family: 'FuturaBook-Normal Regular';*/
   font-weight: 100;
 }
 
@@ -601,8 +601,8 @@ a.sideyellow.close {
   text-align: center;
   width: 100%;
   video {
-    height: 360px;
-    width: 480px;
+    height: 540px;
+    width: 720px;
   }
 }
 
@@ -643,7 +643,7 @@ a.sideyellow.close {
         text-transform: uppercase;
       }
       h3 {
-        font-weight: 100;
+        font-weight: 400;
         margin-bottom: .2em;
         margin-top: 1em;
       }
@@ -806,6 +806,12 @@ a.sideyellow.close {
       padding: 2em 4em;
     }
   }
+  .video-wrapper {
+    video {
+      height: 360px;
+      width: 480px;
+    }
+  }
 }
 
 /* mobile */
@@ -859,6 +865,14 @@ a.sideyellow.close {
   #cv-brown .sections,
   #cv-yellow .sections {
     padding: 2em;
+    /*.annual {
+      h2 {
+        padding-left: 0;
+      }
+      div {
+        padding-left: 0;
+      }
+    }*/
   }
   #work-brown,
   #work-collabo,
@@ -877,9 +891,12 @@ a.sideyellow.close {
   #work-yellow .brief {
     h2 {
       width: 100%;
+      span {
+        padding-left: 0;
+      }
     }
     p {
-      padding-left: .8em;
+      padding-left: 0;
       padding-top: 0;
       width: 100%;
     }
@@ -891,6 +908,12 @@ a.sideyellow.close {
     }
     img:last-child {
       margin-bottom: 1em;
+    }
+  }
+  .video-wrapper {
+    video {
+      height: auto;
+      width: 100%;
     }
   }
 }
