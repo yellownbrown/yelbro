@@ -73,7 +73,7 @@
 	{
 		"title": "Mini calendar",
 		"description": "",
-		"image": "images/gary/list_.png",
+		"image": "images/gary/list_minical.png",
 		"id": "mini-calendar"
 	},
 	{
@@ -81,23 +81,5 @@
 		"description": "",
 		"image": "images/gary/list_singtel.png",
 		"id": "singtel-amped"
-	},
-	{
-		"title": "",
-		"description": "",
-		"image": "images/gary/list_.png",
-		"id": ""
-	},
-	{
-		"title": "",
-		"description": "",
-		"image": "images/gary/list_.png",
-		"id": ""
-	},
-	{
-		"title": "",
-		"description": "",
-		"image": "images/list_.png",
-		"id": ""
 	}
 ]
