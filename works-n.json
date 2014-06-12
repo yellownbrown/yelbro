@@ -1,122 +1,98 @@
 [
 	{
-		"title": "World under water",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
+		"title": "Sony",
+		"description": "test",
 		"image": "images/nikhil/list_astrologer.jpg",
-		"id": "world-under-water"
-	},
-	{
-		"title": "Soby",
-		"description": "totam rem aperiam, eaque ipsa quae ab illo inventore autem vel eum iure reprehenderit qui in ",
-		"image": "images/nikhil/list_sony.jpg",
 		"id": "personal3"
 	},
 	{
-		"title": "title4-nikhil",
-		"description": "Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam",
-		"image": "images/default.jpg",
+		"title": "Google tanjore",
+		"description": "Google",
+		"image": "images/nikhil/list_google.png",
 		"id": "google-tanjore"
 	},
 	{
 		"title": "Brushing Innovation",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
+		"description": "brand name",
 		"image": "images/nikhil/list_astrologer.jpg",
 		"id": "brushing-innovation"
 	},
 	{
 		"title": "Spit stain graffiti",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
+		"description": "brand name",
+		"image": "images/nikhil/list_graffiti.png",
 		"id": "spit-stain-graffiti"
 	},
 	{
-		"title": "",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
-		"id": ""
+		"title": "DIY LIVING",
+		"description": "brand name",
+		"image": "images/nikhil/list_DIYLIVING.png",
+		"id": "DIY-living"
 	},
 	{
-		"title": "",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
-		"id": ""
+		"title": "Indian Panga League",
+		"description": "brand name",
+		"image": "images/nikhil/list_IndianPanga.png",
+		"id": "indian-panga-league"
 	},
 	{
-		"title": "",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
-		"id": ""
+		"title": "Heinz",
+		"description": "Heinz",
+		"image": "images/nikhil/list_heinz.jpg",
+		"id": "heinz"
 	},
 	{
 		"title": "Messagepart",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
+		"description": "Messagepart",
+		"image": "images/nikhil/list_messagepart.png",
 		"id": "messagepart"
 	},
 	{
+		"title": "Big Adda - The Youth networking site",
+		"description": "brand name",
+		"image": "images/nikhil/list_BigAdda2.png",
+		"id": "big-adda"
+	},
+	{
 		"title": "Olympus Cheetah",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
+		"description": "Olympus",
+		"image": "images/gary/list_olympus.png",
 		"id": "olympus-cheetah"
 	},
 	{
 		"title": "Franklin Templeton(Stages) Commercial Featuring Ashwin Mushr",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
+		"description": "brand name",
+		"image": "images/nikhil/list_Franklin.png",
 		"id": "franklin-templeton"
 	},
 	{
-		"title": "",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
-		"id": ""
-	},
-	{
 		"title": "Doublemint",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
+		"description": "Doublemint",
+		"image": "images/nikhil/list_doublemint.png",
 		"id": "doublemint"
 	},
 	{
-		"title": "",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
-		"id": "14"
+		"title": "Sugarfree D'lite",
+		"description": "D'lite",
+		"image": "images/nikhil/list_dlite.png",
+		"id": "dlite"
 	},
 	{
-		"title": "",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
-		"id": "15"
-	},
-	{
-		"title": "",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
-		"id": "sugarfree-dlite"
-	},
-	{
-		"title": "The Imperial",
-		"description": "Mmodi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
-		"image": "images/nikhil/list_imperial.jpg",
+		"title": "The imperial",
+		"description": "brand name",
+		"image": "images/nikhil/list_18.png",
 		"id": "the-imperial"
 	},
 	{
-		"title": "",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
-		"id": "18"
-	},
-	{
 		"title": "Celebrity wedding card",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
+		"description": "brand name",
+		"image": "images/nikhil/list_weddingcard.png",
 		"id": "celebrity-wedding-card"
 	},
 	{
 		"title": "Colour Xerox",
-		"description": "Ut has labores consequuntur has labores consequunturconsequuntur",
-		"image": "images/nikhil/list_astrologer.jpg",
+		"description": "Xerox",
+		"image": "images/nikhil/list_xerox.png",
 		"id": "colour-xerox"
 	}
 ]

@@ -12,7 +12,7 @@ app.run(['$location', '$rootScope', '$timeout', '$routeParams',
     function($location, $rootScope, $timeout, $routeParams) {
         $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
             // when change route, page always goes top (jquery attached)
-            $(window).scrollTop(0);
+            // $(window).scrollTop(0);
             // metadata
             $rootScope.title = current.$$route.title;
             $rootScope.keywords = current.$$route.keywords;
