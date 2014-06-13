@@ -6,7 +6,7 @@
 		"id": "google-tanjore"
 	},
 	{
-		"title": "Brushing Innovation",
+		"title": "Brushing",
 		"description": "brand name",
 		"image": "images/nikhil/list_astrologer.jpg",
 		"id": "brushing-innovation"
@@ -24,7 +24,7 @@
 		"id": "DIY-living"
 	},
 	{
-		"title": "Indian Panga League",
+		"title": "Panga League",
 		"description": "brand name",
 		"image": "images/nikhil/list_IndianPanga.png",
 		"id": "indian-panga-league"
@@ -78,8 +78,8 @@
 		"id": "the-imperial"
 	},
 	{
-		"title": "Celebrity wedding card",
-		"description": "brand name",
+		"title": "wedding card",
+		"description": "Celebrity",
 		"image": "images/nikhil/list_weddingcard.png",
 		"id": "celebrity-wedding-card"
 	},
