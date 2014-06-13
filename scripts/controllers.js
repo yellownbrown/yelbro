@@ -10,7 +10,7 @@ app
 .controller('WorkCollaboCtrl',['$scope', '$location', '$http', 
     function($scope, $location, $http) {
         // $http.get('/works.json')
-        $http.get('http://yellownbrown.github.io/yelbro/works.json')
+        $http.get('http://yellownbrown.github.io/yelbro/works.json', { cache: true })
         .success(function(data) {
             $scope.workslist = data;
         }).error(function(data, status) {
@@ -21,7 +21,7 @@ app
 .controller('WorkYellowCtrl',['$scope', '$location', '$http',
     function($scope, $location, $http) {
         // $http.get('/works-g.json')
-        $http.get('http://yellownbrown.github.io/yelbro/works-g.json')
+        $http.get('http://yellownbrown.github.io/yelbro/works-g.json', { cache: true })
         .success(function(data) {
             $scope.workslistg = data;
         }).error(function(data, status) {
@@ -32,7 +32,7 @@ app
 .controller('WorkBrownCtrl',['$scope', '$location', '$http',
     function($scope, $location, $http) {
         // $http.get('/works-n.json')
-        $http.get('http://yellownbrown.github.io/yelbro/works-n.json')
+        $http.get('http://yellownbrown.github.io/yelbro/works-n.json', { cache: true })
         .success(function(data) {
             $scope.workslistn = data;
         }).error(function(data, status) {
