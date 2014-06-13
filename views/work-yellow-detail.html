@@ -11,15 +11,15 @@
     </div>
     <div class='pure-u-1 pure-u-md-1 pure-u-lg-1 video-wrapper' ng-repeat='(key,value) in work.videos' ng-if='work.videos'>
       <video controls>
-        <source src="{{value}}" type="video/mp4">
+        <source src="{{value}}.mp4" type="video/mp4">
+        <source src="{{value}}.webm" type="video/webm">
         Your browser does not support the video element.
       </video>
     </div>
     <div class='pure-u-1 pure-u-md-1 pure-u-lg-1 audio-wrapper'ng-repeat='(key,value) in work.audios' ng-if='work.audios'>
       <h4>{{key}}</h4>
       <audio controls ng-repeat='(key,value) in work.audios'>
-        <source src="{{value}}" type="audio/ogg">
-        <source src="{{value}}" type="audio/mpeg">
+        <source src="{{value}}.mp3" type="audio/mp3">
         Your browser does not support the audio element.
       </audio>
     </div>
