@@ -443,9 +443,11 @@ a.sideyellow.close {
     width: 70%;
     h1 {
       border-bottom: 1px solid #000;
+      font-size: 2.3vw;
       padding-bottom: .2em;
     }
     h2 {
+      font-size: 1.8vw;
       font-style: italic;
       padding-top: .5em;
       text-transform: uppercase;
@@ -755,6 +757,18 @@ a.sideyellow.close {
 }
 
 @media screen and (max-width: 1024px) {
+  #about-brown,
+  #about-yellow {
+    #info {
+      h1 {
+        font-size: 1.7em;
+        height: auto;
+      }
+      h2 {
+        font-size: 1.4em;
+      }
+    } 
+  }
   #cv-brown {
     .line-lg.line-md h2 {
       border-top: 1px solid $fbrown;
@@ -778,7 +792,11 @@ a.sideyellow.close {
   #about-yellow {
     #info {
       h1 {
+        font-size: 1.8em;
         height: auto;
+      }
+      h2 {
+        font-size: 1.4em;
       }
     } 
   }
