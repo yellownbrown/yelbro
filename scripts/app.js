@@ -5,7 +5,8 @@ var app = angular.module('yelbroApp', [
     'ngRoute',
     'ngControllers',
     // 'ngServices',
-    'ngAnimate'
+    'ngAnimate',
+    'ngFilters'
 ]);
 
 app.run(['$location', '$rootScope', '$timeout', '$routeParams', 

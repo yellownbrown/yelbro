@@ -11,8 +11,8 @@
     </div>
     <div class='pure-u-1 pure-u-md-1 pure-u-lg-1 video-wrapper' ng-repeat='(key,value) in work.videos' ng-if='work.videos'>
       <video controls>
-        <source src="{{value}}.mp4" type="video/mp4">
-        <source src="{{value}}.webm" type="video/webm">
+        <source src="{{value | mp4}}" type="video/mp4">
+        <source src="{{value | webm}}" type="video/webm">
         Your browser does not support the video element.
       </video>
     </div>
