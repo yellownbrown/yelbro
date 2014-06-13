@@ -459,9 +459,10 @@ a.sideyellow.close {
     h3 {
       font-style: 1.1em;
       padding-bottom: 0.2em;
-      .email {
+      #email {
         font-family: helvetica;
         font-weight: 400;
+        text-decoration: none;
         text-transform: lowercase;
       }
       .mobile {
@@ -473,6 +474,9 @@ a.sideyellow.close {
   #info-desc {
     p {
       margin-top: 1em;
+    }
+    #download {
+      text-decoration: none;
     }
   }
 }
@@ -546,7 +550,8 @@ a.sideyellow.close {
       display: block;
       float: left;
       font-size: .9em;
-      height: 150px;
+      /*height: 150px;*/
+      height: auto;
       overflow: hidden;
       padding: .8em .8em .8em 1.6em;
       width: 50%;
@@ -571,10 +576,10 @@ a.sideyellow.close {
 }
 
 /* test - can remove*/
-#work-brown .brief p {
+/*#work-brown .brief p {
   height: auto;
   text-align: right;
-}
+}*/
 
 #work-collabo {
   background: $grey;
