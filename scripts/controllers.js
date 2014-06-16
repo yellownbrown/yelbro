@@ -9,8 +9,8 @@ app
 // all work
 .controller('WorkCollaboCtrl',['$scope', '$location', '$http', 
     function($scope, $location, $http) {
-        // $http.get('/works.json')
-        $http.get('http://yellownbrown.github.io/yelbro/works.json', { cache: true })
+        // $http.get('/works.json', { cache: true })
+        $http.get('http://yellowandbrown.co/works.json', { cache: true })
         .success(function(data) {
             $scope.workslist = data;
         }).error(function(data, status) {
@@ -20,8 +20,8 @@ app
 ])
 .controller('WorkYellowCtrl',['$scope', '$location', '$http',
     function($scope, $location, $http) {
-        // $http.get('/works-g.json')
-        $http.get('http://yellownbrown.github.io/yelbro/works-g.json', { cache: true })
+        // $http.get('/works-g.json', { cache: true })
+        $http.get('http://yellowandbrown.co/works-g.json', { cache: true })
         .success(function(data) {
             $scope.workslistg = data;
         }).error(function(data, status) {
@@ -31,8 +31,8 @@ app
 ])
 .controller('WorkBrownCtrl',['$scope', '$location', '$http',
     function($scope, $location, $http) {
-        // $http.get('/works-n.json')
-        $http.get('http://yellownbrown.github.io/yelbro/works-n.json', { cache: true })
+        // $http.get('/works-n.json', { cache: true })
+        $http.get('http://yellowandbrown.co/works-n.json', { cache: true })
         .success(function(data) {
             $scope.workslistn = data;
         }).error(function(data, status) {
@@ -45,7 +45,7 @@ app
         $rootScope.title = $routeParams.params;
 
         // $http.get('gary/'+$routeParams.params+'.json', {cache: true})
-        $http.get('http://yellownbrown.github.io/yelbro/gary/'+$routeParams.params+'.json', {cache: true})
+        $http.get('http://yellowandbrown.co/gary/'+$routeParams.params+'.json', {cache: true})
         .success(function(data) {
             $scope.work = data;
         }).error(function(data, status) {
@@ -71,7 +71,7 @@ app
         $rootScope.title = $routeParams.params;
 
         // $http.get('nikhil/'+$routeParams.params+'.json', {cache: true})
-        $http.get('http://yellownbrown.github.io/yelbro/nikhil/'+$routeParams.params+'.json', {cache: true})
+        $http.get('http://yellowandbrown.co/nikhil/'+$routeParams.params+'.json', {cache: true})
         .success(function(data) {
             $scope.work = data;
         }).error(function(data, status) {
@@ -98,7 +98,7 @@ app
         $rootScope.title = $routeParams.params;
 
         // $http.get('collabo/'+$routeParams.params+'.json', {cache: true})
-        $http.get('http://yellownbrown.github.io/yelbro/collabo/'+$routeParams.params+'.json', {cache: true})
+        $http.get('http://yellowandbrown.co/collabo/'+$routeParams.params+'.json', {cache: true})
         .success(function(data) {
             $scope.work = data;
         }).error(function(data, status) {
