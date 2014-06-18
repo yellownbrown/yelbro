@@ -1,8 +1,38 @@
 [
 	{
-		"title": "Doublemint",
-		"description": "",
+		"title": "Carbon story",
+		"description": "World under water",
+		"image": "images/list_wuw.png",
+		"id": "world-under-water"
+	},
+	{
+		"title": "Guinness",
+		"description": "Draught in a Bottle",
+		"image": "images/list_guinness.png",
+		"id": "guinness"
+	},
+	{
+		"title": "Wrigleys double mint",
+		"description": "Speech bubble",
 		"image": "images/gary/list_doublemint.png",
-		"id": "collabo1"
+		"id": "doublemint"
+	},
+	{
+		"title": "Olympus",
+		"description": "Cheetah/Justin",
+		"image": "images/gary/list_olympus.png",
+		"id": "olympus"
+	},
+	{
+		"title": "BBDO",
+		"description": "Campaign 40th Anniversary",
+		"image": "images/list_40s.png",
+		"id": "bbdo-40th-anniversary"
+	},
+	{
+		"title": "BBDO",
+		"description": "The impossible Sell",
+		"image": "images/list_impossiblesell.png",
+		"id": "bbdo-the-impossible-sell"
 	}
 ]

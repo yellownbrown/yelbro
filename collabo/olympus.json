@@ -1,0 +1,13 @@
+{
+	"title": "Olympus Cheetah",
+	"description": "",
+	"images": {
+		"0": "images/gary/olympus-bigfoot-01.jpg",
+		"1": "images/gary/olympus-KANGAROO-01.jpg",
+		"2": "images/gary/olympus-mountain-01.jpg"
+	},
+	"audios": {
+		"Olympus Cheetah": "audio/11Olympus Cheetah.mp3",
+		"Olympus Justin": "audio/11Olympus Justin.mp3"
+	}
+}
