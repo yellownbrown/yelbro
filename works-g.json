@@ -17,12 +17,6 @@
 		"id": "signs"
 	},
 	{
-		"title": "Doublemint",
-		"description": "",
-		"image": "images/gary/list_doublemint.png",
-		"id": "doublemint"
-	},
-	{
 		"title": "Pepsi longest dribble",
 		"description": "",
 		"image": "images/gary/list_pepsi.png",
@@ -51,12 +45,6 @@
 		"description": "",
 		"image": "images/gary/list_mini.png",
 		"id": "mini-fun-corners"
-	},
-	{
-		"title": "Olympus 20x zoom",
-		"description": "",
-		"image": "images/gary/list_olympus.png",
-		"id": "olympus"
 	},
 	{
 		"title": "SOLIVITE",
