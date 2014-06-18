@@ -28,11 +28,5 @@
 		"description": "Campaign 40th Anniversary",
 		"image": "images/list_40s.png",
 		"id": "bbdo-40th-anniversary"
-	},
-	{
-		"title": "BBDO",
-		"description": "The impossible Sell",
-		"image": "images/list_impossiblesell.png",
-		"id": "bbdo-the-impossible-sell"
 	}
 ]
