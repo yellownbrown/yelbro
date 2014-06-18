@@ -764,7 +764,7 @@ a.sideyellow.close {
   #about-yellow {
     #info {
       h1 {
-        font-size: 1.7em;
+        font-size: 1.5em;
         height: auto;
       }
       h2 {
@@ -790,7 +790,7 @@ a.sideyellow.close {
 }
 
 /* tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #about-brown,
   #about-yellow {
     #info {
