@@ -12,6 +12,6 @@ angular.module('ngFilters', [])
 .filter('webm', function() {
     return function(r) {
         console.log('r', r);
-        return r+'.wemb';
+        return r+'.webm';
     };
 });
