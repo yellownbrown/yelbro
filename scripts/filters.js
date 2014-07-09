@@ -14,4 +14,11 @@ angular.module('ngFilters', [])
         console.log('r', r);
         return r+'.webm';
     };
-});
+})
+.filter('desc', function() {
+	return function(str) {
+		var str = str;
+		var res = str.replace(/_/g, "\'");
+		return res;
+	}
+})

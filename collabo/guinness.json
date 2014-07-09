@@ -1,6 +1,8 @@
 {
 	"title": "Guinness",
-	"description": "",
+	"subtitle": "",
+	"description": "How do you convince loyalists that Guinness Draught in a bottle is nothing but their favourite pint in a different package?",
+	"answer": "By re-imagining the familiar Guinness pint iconography within the design language of the bottle.",
 	"images": {
 		"0": "images/Un 300dpi-01.jpg",
 		"1": "images/Cinq 300dpi-01.jpg",

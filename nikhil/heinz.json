@@ -1,6 +1,8 @@
 {
 	"title": "Heinz",
-	"description": "",
+	"subtitle": "",
+	"description": "How do remind consumers that Heinz is the thickest ketchup out there?",
+	"answer": "With Heinz Inverted labels that make for a good read while they wait for the ketchup to land on the plate.",
 	"images": {
 		"0": "images/nikhil/8heinz600x393.jpeg"
 	}

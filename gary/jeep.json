@@ -1,6 +1,8 @@
 {
 	"title": "Jeep",
-	"description": "",
+	"subtitle": "",
+	"description": "How do you celebrate the \"go anywhere\" proposition of an iconic brand like Jeep?",
+	"answer": "With ads that bring two completely different worlds together.",
 	"images": {
 		"0": "images/gary/huskeyXcamel.png",
 		"1": "images/gary/bushmanXeskimo.png",

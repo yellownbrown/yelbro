@@ -1,6 +1,8 @@
 {
 	"title": "Mini calendar",
-	"description": "",
+	"subtitle": "",
+	"description": "How do you remind customers that their mini is packed with features?",
+	"answer": "With a calendar that breaks it all down.",
 	"images": {
 		"0": "images/gary/mini calendar_o.jpg"
 	}

@@ -1,6 +1,8 @@
 {
 	"title": "title4",
-	"description": "Et harum quidem rerum ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+	"subtitle": "",
+	"description": "",
+	"answer": "",
 	"images": {
 		"0": "images/default3.jpg"
 	}

@@ -1,6 +1,8 @@
 {
 	"title": "Pedigree dogs",
-	"description": "",
+	"subtitle": "",
+	"description": "How do you convey that Pedigree for dogs is not just tasty but also good for digestion?",
+	"answer": "With quirky posters that stand out in the clutter.",
 	"images": {
 		"0": "images/gary/corgi.jpg",
 		"1": "images/gary/poodle.jpg",

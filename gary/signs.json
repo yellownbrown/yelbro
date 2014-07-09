@@ -1,6 +1,8 @@
 {
 	"title": "Signs",
-	"description": "",
+	"subtitle": "",
+	"description": "How do you create communication for a car safety feature that works across many markets?",
+	"answer": "With a visual language that everyone understands: Using graphic signs",
 	"images": {
 		"0": "images/gary/Signs 300dpi.jpg"
 	}

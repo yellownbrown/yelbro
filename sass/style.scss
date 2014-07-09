@@ -696,7 +696,18 @@ a.sideyellow.close {
 }
 
 #detail {
-  p,
+  p.detailtitle {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  p.detailsub {
+    font-size: .8em;
+    margin-bottom: 1em;
+  }
+  p.detaildesc {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+  }
   img {
     margin-bottom: 4em;
   }
