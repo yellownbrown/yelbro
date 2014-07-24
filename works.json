@@ -1,37 +1,43 @@
 [
 	{
-		"title": "Carbon story",
-		"description": "World under water",
+		"title": "World under water",
+		"brand": "Carbon story",
+		"description": "A warning sign, in the form of a website",
 		"image": "images/list_wuw.png",
 		"id": "world-under-water"
 	},
 	{
-		"title": "Guinness",
-		"description": "Draught in a Bottle",
+		"title": "Draught in a Bottle",
+		"brand": "Guinness",
+		"description": "Is it a pint in a bottle? Or vice versa?",
 		"image": "images/list_guinness.png",
 		"id": "guinness"
 	},
 	{
-		"title": "Wrigleys double mint",
-		"description": "Speech bubble",
+		"title": "Speech bubble",
+		"brand": "Wrigleys",
+		"description": "Print campaign for minty-fresh gum",
 		"image": "images/gary/list_doublemint.png",
 		"id": "doublemint"
 	},
 	{
-		"title": "Olympus",
-		"description": "Cheetah/Justin",
+		"title": "Cheetah/Justin",
+		"brand": "Olympus Camera",
+		"description": "Radio campaign highlighting the sports capture feature",
 		"image": "images/gary/list_olympus.png",
 		"id": "olympus"
 	},
 	{
-		"title": "BBDO",
-		"description": "Campaign 40th Anniversary",
+		"title": "Campaign 40th Anniversary",
+		"brand": "BBDO",
+		"description": "Print ad to congratulate Campaign.",
 		"image": "images/list_40s.png",
 		"id": "bbdo-40th-anniversary"
 	},
 	{
-		"title": "BBDO",
-		"description": "The impossible Sell",
+		"title": "The impossible Sell",
+		"brand": "BBDO",
+		"description": "Career fairs need not be boring",
 		"image": "images/list_impossiblesell.png",
 		"id": "bbdo-the-impossible-sell"
 	}

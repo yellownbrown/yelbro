@@ -3,11 +3,15 @@
     <div class='pure-u-1'><h1 class='futura up'>Works</h1></div>
     <div class="pure-u-1 pure-u-sm-1 pure-u-md-1 pure-u-lg-1-2 work" ng-repeat='item in workslistn'>
       <a class='brief' href='#/work/nikhil/{{item.id}}'>
-        <div>
-          <h2><span class='minion'>{{item.title}}</span></h2>
-          <p class='futura'>{{item.description}}</p>
+        <div class='bottom-line pure-g'>
+          <h2 class='pure-u-1-2'>
+            <span class='futura'>{{item.title}}<em style='display: block'>{{item.brand}}</em></span>
+          </h2>
+          <p class='pure-u-1-2 futura'>{{item.description}}</p>
         </div>
-        <img title='{{item.title}}' alt='{{item.title}}' ng-src="{{item.image}}"/>
+        <div class='image-wrapper'>
+          <img title='{{item.title}}' alt='{{item.title}}' src="{{item.image}}"/>
+        </div>
       </a>
     </div>
   </div>

@@ -8,7 +8,7 @@
     <div class='pure-u-1'><p class='futura detailtitle'>{{work.title}}</p></div>
     <div class='pure-u-1'><p class='futura detailsub'>{{work.subtitle}}</p></div>
     <div class='pure-u-1'><p class='futura detaildesc'>{{work.description | desc }}</p></div>
-    <div class='pure-u-1'><p class='futura detaildesc'>{{work.answer | desc }}</p></div>
+    <div class='pure-u-1'><p class='futura detaildesc last'>{{work.answer | desc }}</p></div>
     <div class='pure-u-1 pure-u-md-1 pure-u-lg-1' ng-if='work.images'>
       <img ng-repeat='(key,value) in work.images' ng-src="{{value}}" />
     </div>

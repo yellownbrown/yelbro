@@ -1,85 +1,100 @@
 [
 	{
-		"title": "Google",
-		"description": "Tanjore",
+		"title": "Tanjore",
+		"brand": "Google",
+		"description": "A commercial to promote Google Adwords in India.",
 		"image": "images/nikhil/list_google.png",
 		"id": "google-tanjore"
 	},
 	{
-		"title": "Colgate",
-		"description": "Brushing innovation",
+		"title": "Brushing innovation",
+		"brand": "Colgate",
+		"description": "A simple product demo for radio.",
 		"image": "images/video.png",
 		"id": "brushing-innovation"
 	},
 	{
-		"title": "CPAA",
-		"description": "Spit stain graffiti",
+		"title": "Spit Stain Graffitti",
+		"brand": "Cancer Patients Aid Association",
+		"description": "An environmental design piece for a problem peculiar to India.",
+		"brand": "",
 		"image": "images/nikhil/list_graffiti.png",
 		"id": "spit-stain-graffiti"
 	},
 	{
-		"title": "DIY LIVING",
-		"description": "DIY packaging",
+		"title": "DIY Packaging",
+		"brand": "DIY LIVING",
+		"description": "A sustainable packaging solution.",
 		"image": "images/nikhil/list_DIYLIVING.png",
 		"id": "DIY-living"
 	},
 	{
-		"title": "Virgin Mobile",
-		"description": "IPL",
+		"title": "Indian Panga League",
+		"brand": "Virgin Mobile",
+		"description": "105 web films about cricket fans",
 		"image": "images/nikhil/list_IndianPanga.png",
 		"id": "indian-panga-league"
 	},
 	{
-		"title": "Cupid Condoms",
-		"description": "Savings of a lifetime",
+		"title": "Savings of a lifetime",
+		"brand": "Cupid Condoms",
+		"description": "Not your typical starburst poster",
 		"image": "images/nikhil/list_cupid.png",
 		"id": "cupid-condoms"
 	},
 	{
-		"title": "Heinz",
-		"description": "Inverted Labels",
+		"title": "Inverted Labels",
+		"brand": "Heinz Ketchup",
+		"description": "Packaging that highlights the product benefit.",
 		"image": "images/nikhil/list_heinz.jpg",
 		"id": "heinz"
 	},
 	{
-		"title": "Vicks",
-		"description": "Bring Voice Back",
+		"title": "Bring Voice back",
+		"brand": "Vicks",
+		"description": "Print campaign about technology addiction.",
 		"image": "images/nikhil/list_messagepart.png",
 		"id": "messagepart"
 	},
 	{
-		"title": "Bigadda.com",
-		"description": "Friends stay",
+		"title": "Friends stay",
+		"brand": "Bigadda.com",
+		"description": "A commercial to launch India’s social network.",
 		"image": "images/nikhil/list_BigAdda2.png",
 		"id": "big-adda"
 	},
 	{
 		"title": "Franklin Templeton",
-		"description": "Stages of life",
+		"brand": "Stages of life",
+		"description": "A commercial for the pan-asia market.",
 		"image": "images/nikhil/list_Franklin.png",
 		"id": "franklin-templeton"
 	},
 	{
-		"title": "Sugarfree D'lite",
-		"description": "Fido",
+		"title": "Fido",
+		"brand": "Sugarfree D'lite",
+		"description": "A funny take on high-calorie drinks.",
 		"image": "images/nikhil/list_dlite.png",
 		"id": "dlite"
 	},
 	{
 		"title": "The imperial",
-		"description": "The imperial",
+		"brand": "The imperial",
+		"description": "Print campaign to launch India’s tallest building.",
 		"image": "images/nikhil/list_18.png",
 		"id": "the-imperial"
 	},
 	{
-		"title": "Minz Jewelry",
-		"description": "Celebrity wedding cards",
+		"title": "Celebrity Wedding cards",
+		"brand": "Minz Jewelry",
+		"description": "Direct mailers for a cosmetic jewelry brand",
 		"image": "images/nikhil/list_weddingcard.png",
 		"id": "celebrity-wedding-card"
 	},
 	{
-		"title": "Xerox",
-		"description": "Predated certificates",
+		"title": "Pre-dated Certificates",
+		"brand": "Xerox",
+		"description": "B2B mailers for industry and marketing folks",
 		"image": "images/nikhil/list_xerox.png",
 		"id": "colour-xerox"
 	}

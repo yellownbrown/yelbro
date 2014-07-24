@@ -1,72 +1,84 @@
 [
 	{
-		"title": "Jeep",
-		"description": "",
+		"title": "Two Worlds",
+		"brand": "Jeep",
+		"description": "One of the most award-winning campaigns of this decade",
 		"image": "images/gary/list_jeep.png",
 		"id": "jeep"
 	},
 	{
-		"title": "Acres",
-		"description": "",
+		"title": "Tree Rings",
+		"brand": "Acres",
+		"description": "Poster to encourage planting trees",
 		"image": "images/gary/list_acres.png",
 		"id": "acres"
 	},{
 		"title": "Signs",
-		"description": "",
+		"brand": "Mercedes Benz",
+		"description": "A graphic poster campaign for Mercedes",
 		"image": "images/gary/list_signs.png",
 		"id": "signs"
 	},
 	{
-		"title": "Pepsi longest dribble",
-		"description": "",
+		"title": "Longest Dribble",
+		"brand": "Pepsi",
+		"description": "An integrated promotional campaign",
 		"image": "images/gary/list_pepsi.png",
 		"id": "pepsi"
 	},
 	{
-		"title": "Dulux paint bank",
-		"description": "",
+		"title": "Paint bank",
+		"brand": "Dulux",
+		"description": "A CSR initiative to encourage recycling of paint",
 		"image": "images/gary/list_dulux.png",
 		"id": "dulux"
 	},
 	{
-		"title": "Pedigree dogs",
-		"description": "",
+		"title": "Maze",
+		"brand": "Pedigree",
+		"description": "Doodles for dog food",
 		"image": "images/gary/list_pedigree.png",
 		"id": "pedigree"
 	},
 	{
-		"title": "Alka seltzer",
-		"description": "",
+		"title": "Stomach",
+		"brand": "Alka Seltzer",
+		"description": "Print campaign for the world-famous antacid brand",
 		"image": "images/gary/list_alka.png",
 		"id": "alka"
 	},
 	{
-		"title": "Mini fun corners",
-		"description": "",
+		"title": "Fun Corners",
+		"brand": "Mini",
+		"description": "Print campaign for Mini Cooper",
 		"image": "images/gary/list_mini.png",
 		"id": "mini-fun-corners"
 	},
 	{
-		"title": "SOLIVITE",
-		"description": "",
+		"title": "Solivite",
+		"brand": "Solivite",
+		"description": "Commercial for kid’s milk",
 		"image": "images/gary/list_solivite.png",
 		"id": "solivite"
 	},
 	{
 		"title": "Cordless Driver",
-		"description": "",
+		"brand": "Bosch",
+		"description": "Commercial for a hardware innovation",
 		"image": "images/gary/list_cordless.png",
 		"id": "cordless"
 	},
 	{
-		"title": "Mini calendar",
-		"description": "",
+		"title": "Calender",
+		"brand": "Mini",
+		"description": "The annual gift for Mini drivers",
 		"image": "images/gary/list_minical.png",
 		"id": "mini-calendar"
 	},
 	{
-		"title": "Singtel AMPed",
-		"description": "",
+		"title": "AMPed",
+		"brand": "Singtel",
+		"description": "Posters that celebrate music",
 		"image": "images/gary/list_singtel.png",
 		"id": "singtel-amped"
 	}

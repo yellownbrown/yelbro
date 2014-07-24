@@ -534,27 +534,37 @@ a.sideyellow.close {
   .brief {
     cursor: pointer;
     display: block;
-    div {
+    text-decoration: none;
+    .bottom-line {
+      border-bottom: 3px solid #000;
       border-top: 1px solid #000;
+      margin-bottom: 1em;
     }
+/*    .image-wrapper {
+      border-top: 1px solid #000;
+    }*/
     h2 {
       width: 50%;
       display: block;
       float: left;
       font-size: 1em;
-      font-style: italic;
-      margin-bottom: .8em;
+      /*font-style: italic;*/
+      /*margin-bottom: .8em;*/
       span {
-        border-bottom: 3px solid #000;
+        /*border-bottom: 3px solid #000;*/
         display: block;
         font-weight: 400;
         padding: .7em;
         text-transform: uppercase;
       }
+      em {
+        font-family: 'MinionPro';
+      }
     }
     p {
       display: block;
       float: left;
+      font-family: 'futura';
       font-size: .9em;
       height: auto;
       overflow: hidden;
@@ -567,14 +577,47 @@ a.sideyellow.close {
   }
 }
 
+#detail {
+  p.detailtitle {
+    border-top: 1px solid #000;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    padding-top: 1em;
+  }
+  p.detailsub {
+    font-size: .8em;
+    margin-bottom: 1em;
+  }
+  p.detaildesc {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+  }
+  p.detaildesc.last {
+    border-bottom: 3px solid #000;
+    padding-bottom: 1em;
+  }
+  img {
+    margin-bottom: 4em;
+  }
+  img:last-child {
+    margin-bottom: 2em;
+  }
+}
+
 #work-brown {
   background: $brown;
   color: $fbrown;
   .brief {
-    div {
+    .bottom-line {
       border-color: $fbrown;
     }
     h2 span {
+      border-color: $fbrown;
+    }
+  }
+  #detail {
+    p.detailtitle,
+    p.detaildesc.last {
       border-color: $fbrown;
     }
   }
@@ -590,10 +633,16 @@ a.sideyellow.close {
   background: $grey;
   color: $fgrey;
   .brief {
-    div {
+    .bottom-line {
       border-color: $fgrey;
     }
     h2 span {
+      border-color: $fgrey;
+    }
+  }
+  #detail {
+    p.detailtitle,
+    p.detaildesc.last {
       border-color: $fgrey;
     }
   }
@@ -603,10 +652,16 @@ a.sideyellow.close {
   background: $yellow;
   color: $fyellow;
   .brief {
-    div {
+    .bottom-line {
       border-color: $fyellow;
     }
     h2 span {
+      border-color: $fyellow;
+    }
+  }
+  #detail {
+    p.detailtitle,
+    p.detaildesc.last {
       border-color: $fyellow;
     }
   }
@@ -695,26 +750,6 @@ a.sideyellow.close {
   }
 }
 
-#detail {
-  p.detailtitle {
-    font-size: 1.5em;
-    margin-bottom: 0;
-  }
-  p.detailsub {
-    font-size: .8em;
-    margin-bottom: 1em;
-  }
-  p.detaildesc {
-    font-size: 1.1em;
-    margin-bottom: 1em;
-  }
-  img {
-    margin-bottom: 4em;
-  }
-  img:last-child {
-    margin-bottom: 2em;
-  }
-}
 /* svg */
 .icon {
   height: 32px;
